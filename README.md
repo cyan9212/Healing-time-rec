@@ -1,2 +1,9 @@
-# Healing-time-rec
-사용자의 지역에 맞는 여가활동장소(노래방, 보드게임방 고양이카페 등)을 소개해주고 위치 및 후기등의 정보를 알려주는 카카오 챗봇 
+# Healing_time
+Recommend healing time space to users
+
+# Project Flow
+1. Save Healing Time shops' data that collected by using crowling about naver, daum
+2. Customer requests serveice by sending KakaoTalk message
+3. The message is sended to AWS EC2 Ubuntu Server(Backend) and We understand the intent of message by Google Dialog Flow model
+4. We get information that Customer want from AWS RDS and return it to Customer by KakaoTalk message
+5. The steps so far are available 24 hours a day
